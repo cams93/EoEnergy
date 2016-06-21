@@ -6,9 +6,19 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
+<div class="container" id="no-padding">
+  <div class="col-lg-12">
+    <form name="outerForm" class="tab-form-demo">
+      <uib-tabset active="activeForm">
+        <uib-tab index="0" heading="Tab 1">
+        </uib-tab>
+        <uib-tab index="1" heading="Tab 2">
+        </uib-tab>
+        <uib-tab index="2" heading="Tab 3">
+        </uib-tab>
+      </uib-tabset>
+    </form>
+    <div ng-if="true">
       <nvd3 options='options' data='data'></nvd3>
     </div>
   </div>
