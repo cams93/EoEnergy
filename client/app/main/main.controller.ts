@@ -54,8 +54,7 @@ class MainController {
           axisLabel: 'Mes'
         },
         yAxis: {
-          axisLabel: 'Corriente (Amperes)',
-          axisLabelDistance: 30
+          axisLabel: 'Corriente (Amperes)'
         }
       }
     };
