@@ -9,7 +9,7 @@ class MainController {
     this.$http = $http;
     this.awesomeThings = [];
 
-    $scope.t1 = true;
+    $scope.t1 = false;
     $scope.t2 = false;
     $scope.t3 = false;
     $scope.tab1 = function(){
@@ -26,6 +26,11 @@ class MainController {
       $scope.t1 = false;
       $scope.t2 = false;
       $scope.t3 = true;
+    };
+    $scope.reset = function(){
+      $scope.t1 = false;
+      $scope.t2 = false;
+      $scope.t3 = false;
     };
 
     $scope.options = {

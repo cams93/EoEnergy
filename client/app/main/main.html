@@ -1,7 +1,7 @@
 <div class="jumbotron jumbotron-fluid" id="gray-rectangle" style="padding-top: 10px; padding-bottom: 10px;">
   <div class="container" ng-model="query">
-    <div class="col-lg-3">
-      <h1 class="display-3">EoEnergy</h1>
+    <div class="col-lg-2">
+      <img src="/assets/images/icon.png" width="200"/>
     </div>
     <div class="col-lg-1"></div>
     <div class="col-lg-8">
@@ -14,11 +14,36 @@
   <div class="col-lg-12">
     <form name="outerForm" class="tab-form-demo">
       <uib-tabset active="activeForm">
-        <uib-tab index="0"  ng-click="tab1()" heading="Tab 1">
+        <uib-tab index="0" ng-click="reset()" heading="Inicio">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3><b>Propuesta de valor</b></h3>
+              <h4>Nuevo diseño que reduce la fricción del aire</h4>
+              <h4>Menor costo a los generadores eólicos convencionales</h4>
+              <h4>Capacidad de personalizar tu generador para mejorar la vista de su entorno</h4>
+              <h4>Ahorro de energía</h4>
+            </div>
+            <div class="col-lg-6">
+              <h3><b>Beneficios</b></h3>
+              <h4>Reducir los contaminantes producidos por la basura eléctrica y electrónica</h4>
+              <h4>Producción de generadores eólicos a bajo costo</h4>
+              <h4>Reducción de consumo de electricidad y sus precios.</h4>
+            </div>
+          </div>
+          <br>
+          <img src="/assets/images/image.jpg"/>
         </uib-tab>
-        <uib-tab index="1" ng-click="tab2()" heading="Tab 2">
+        <uib-tab index="1"  ng-click="tab1()" heading="Gráfica 1">
         </uib-tab>
-        <uib-tab index="2" ng-click="tab3()" heading="Tab 3">
+        <uib-tab index="2" ng-click="tab2()" heading="Gráfica 2">
+        </uib-tab>
+        <uib-tab index="3" ng-click="tab3()" heading="Gráfica 3">
+        </uib-tab>
+        <uib-tab index="4" ng-click="reset()" heading="Contacto">
+          <h3><b>Ask us a question</b></h3>
+          <h4>eoenergy@email.com</h4>
+          <h4>Office: 36451217</h4>
+          <h4>Mobile: 3317256476</h4>
         </uib-tab>
       </uib-tabset>
     </form>
